@@ -1,0 +1,13 @@
+<% if(user){ %>
+ <%- partial("say") %>
+ <% }else{ %>
+ 	<div class="hero-unit">
+	<h1>欢迎来到HandlerBlog</h1>
+	<p>HandlerBlog是一个基于Node.js的微博系统</p>
+	<p>
+	<a class="btn btn-primary btn-large" href="/login">登录</a>
+	<a class="btn btn-large" href="/reg">立即注册</a>
+	</p>
+	</div>
+ <% } %>
+ <%- partial("posts",{"posts":posts}) %>
